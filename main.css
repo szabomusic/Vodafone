@@ -8,20 +8,40 @@ body {
   color: #ccc;
   margin: auto;
   max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
-#upper-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#upper-nav .main-ul {
   display: flex;
   gap: 30px;
   list-style: none;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 5px;
+}
+.submenu li {
+  background: inherit;
+  padding: 10px;
+  margin-right: 10px;
+}
+.submenu li a {
+  color: #ccc;
+  padding: 5px;
+  text-decoration: none;
+}
+.submenu li a:hover {
+  background: white;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked ~ ul {
+  display: flex;
 }
 
 nav + nav {
@@ -32,4 +52,5 @@ nav + nav {
   padding: 50px;
   font-size: 20px;
 }
+
 /*# sourceMappingURL=main.css.map */

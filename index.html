@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vodafone</title>
     <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <nav id="upper-nav">
-      <div>
-        <ul>
-          <li>Lakossági</li>
-          <li>Kisvállalkozások</li>
-          <li>Közép - és Nagyvállalatok</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              id="webmail--icon"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-            >
-              <path
+        <div>
+            <ul class="main-ul">
+                <li>Lakossági</li>
+                <li>Kisvállalkozások</li>
+                <li>Közép - és Nagyvállalatok</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="main-ul">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="webmail--icon" width="16" height="16" viewBox="0 0 24 24">
+                <path
                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-              ></path>
-            </svg>
-            Webmail
-          </li>
-          <li>Change language</li>
-        </ul>
-      </div>
+                ></path>
+              </svg> Webmail
+                </li>
+                <li>
+                    <input type="checkbox" id="language-checkbox">
+                    <label for="language-checkbox">
+                    Change Language
+                  </label>
+                    <ul id="submenu">
+                        <li>
+                            <label for="Hungarian">
+                           <a href="#" id="Hungarian">Hungarian</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="English">
+                            <a href="#" id="English">English</a>
+                              </label>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <nav>
-      <div>körte</div>
+        <div>körte</div>
     </nav>
-  </body>
+</body>
+
 </html>
